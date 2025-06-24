@@ -1,11 +1,13 @@
 /* style.css */
 body {
-  font-family: 'Jaldi', 'Poppins', sans-serif;
+  font-family: 'Poppins', sans-serif;
   margin: 0;
   padding: 0;
-  background: linear-gradient(to right, #f9f9f9, #e0f7fa);
+  background: linear-gradient(135deg, #fefcea, #f1da36);
+  background-attachment: fixed;
+  background-size: cover;
+  color: #333;
 }
-
 header {
   display: flex;
   align-items: center;
@@ -47,15 +49,16 @@ nav a:hover {
   object-fit: cover;
   border-radius: 0 0 10px 10px;
 }
-
 section {
-  padding: 30px;
-  background: #fff;
-  margin: 40px 20px;
-  border-radius: 12px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-  animation: fadeInUp 0.8s ease-in-out;
+  background: #ffffffcc; /* transparent white */
+  backdrop-filter: blur(6px);
+  margin: 30px 20px;
+  border-radius: 14px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.1);
 }
+
+
+
 
 .facility-grid {
   display: flex;
