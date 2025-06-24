@@ -218,3 +218,76 @@ section {
   border-radius: 14px;
   box-shadow: 0 6px 18px rgba(0,0,0,0.1);
 }
+/* Header base */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(to right, #ffd700, #ffeb3b);
+  color: black;
+  padding: 15px 30px;
+  flex-wrap: wrap;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Logo + Title group */
+.logo-title {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 60px;
+  margin-right: 15px;
+}
+
+/* Hamburger button hidden by default */
+.hamburger {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+/* Nav link styling */
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  transition: border-bottom 0.2s ease, color 0.2s ease;
+}
+
+.nav-links a:hover {
+  color: #333;
+  border-bottom: 2px solid #111;
+}
+
+/* ✅ Mobile Responsive */
+@media screen and (max-width: 768px) {
+  .nav-links {
+    flex-direction: column;
+    width: 100%;
+    background: #fff9c4;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    display: none;
+    text-align: center;
+    padding: 20px 0;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+  }
+}
