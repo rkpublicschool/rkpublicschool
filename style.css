@@ -152,3 +152,60 @@ footer {
     transform: translateY(0);
   }
 }
+#syllabus-home {
+  padding: 50px 20px;
+  background: #fff8e1;
+  text-align: center;
+}
+
+#syllabus-home h2 {
+  font-size: 32px;
+  margin-bottom: 30px;
+  color: #2c3e50;
+}
+
+.syllabus-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  padding: 0 10px;
+}
+
+.syllabus-card {
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  padding: 25px;
+  transition: transform 0.3s ease;
+}
+
+.syllabus-card:hover {
+  transform: translateY(-5px);
+}
+
+.syllabus-card h3 {
+  color: #0277bd;
+  margin-bottom: 10px;
+}
+
+.syllabus-card p {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.view-btn {
+  display: inline-block;
+  padding: 10px 16px;
+  background: #ff9800;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.view-btn:hover {
+  background: #e68900;
+}
+
