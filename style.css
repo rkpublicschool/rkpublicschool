@@ -42,15 +42,7 @@ nav a:hover {
   color: #333;
   border-bottom: 2px solid #111;
 }
-.center-section {
-  text-align: center;
-  width: 80%;
-  margin: auto;
-}
-.center-section p {
-  font-size: 1.2rem;
-  line-height: 1.8;
-}
+
 
 .facility-grid {
   display: grid;
