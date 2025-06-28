@@ -1,90 +1,158 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>R.K. PUBLIC SCHOOL</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>R.K. Public School</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka&family=Poppins&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
 <body>
-<header>
-  <div class="logo-title">
-    <img src="logo.png" class="logo" alt="School Logo">
-    <h1>R.K. Public School</h1>
-  </div>
-  <nav id="navbar" class="nav-links">
-    <a href="#about">About</a>
-    <a href="#facilities">Facilities</a>
-    <a href="syllabus.html">Syllabus</a>
-    <a href="#gallery">Gallery</a>
-    <a href="#contact">Contact</a>
-  </nav>
-  <div id="hamburger" class="hamburger">&#9776;</div>
-</header>
-<section id="hero">
-  <div class="hero-content">
-    <h1>Welcome to R.K. Public School</h1>
-    <p>Igniting Curiosity. Inspiring Excellence.</p>
-    <a href="#about" class="cta-button">Explore More</a>
-  </div>
-  <!--about-->
+
+  <!-- Header -->
+  <header>
+    <div class="logo">
+      <a href="index.html">
+        <img src="images/logo.png" alt="Logo" class="logo-img" />
+      </a>
+      <span class="school-name">R.K. Public School</span>
+    </div>
+
+    <div class="menu-toggle" id="mobile-menu">&#9776;</div>
+    <nav class="navbar">
+      <ul class="nav-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="faculty.html">Faculty</a></li>
+        <li class="dropdown">
+          <a href="#">Academics ▾</a>
+          <ul class="dropdown-menu">
+            <li><a href="academics.html">Overview</a></li>
+            <li><a href="syllabus.html">Syllabus</a></li>
+            <li><a href="exams.html">Exam Schedule</a></li>
+          </ul>
+        </li>
+        <li><a href="syllabus.html">Syllabus</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="notice.html">Notices</a></li>
+        <li><a href="parents.html">Parents</a></li>
+        <li><a href="admissions.html">Admissions</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Slider -->
+  <section class="hero-slider">
+    <div class="slide active">
+      <img src="images/hero1.jpg" alt="Welcome Slide">
+      <div class="slide-text">
+        <h1>Welcome to R.K. Public School</h1>
+        <p>Where little minds blossom into bright futures.</p>
+        <a href="admissions.html" class="hero-btn">Explore Admissions</a>
+      </div>
+    </div>
+
+    <div class="slide">
+      <img src="images/hero2.jpg" alt="Facilities Slide">
+      <div class="slide-text">
+        <h1>Empowering Through Modern Facilities</h1>
+        <p>Library, Smart Classes, Playground and more!</p>
+        <a href="facilities.html" class="hero-btn">Explore Facilities</a>
+      </div>
+    </div>
+
+    <div class="slide">
+      <img src="images/hero3.jpg" alt="Achievements Slide">
+      <div class="slide-text">
+        <h1>Celebrating Student Achievements</h1>
+        <p>Our students shine in academics and beyond.</p>
+        <a href="gallery.html" class="hero-btn">View Achievements</a>
+      </div>
+    </div>
+
+    <!-- Arrow Controls -->
+    <div class="slider-controls">
+      <span class="prev">&#10094;</span>
+      <span class="next">&#10095;</span>
+    </div>
+  </section>
+
+  <!-- About Us -->
+  <section id="about" class="about">
+    <h2>About Us</h2>
+    <p>
+      R.K. Public School is a child-friendly campus focused on nurturing values, creativity, and foundational learning.
+      With trained faculty and joyful learning methods, we provide the ideal environment for young minds.
+    </p>
+  </section>
 
   <!-- Facilities -->
-  
-</section>
-  <!-- Syllabus -->
-  <section id="syllabus-home">
-  <h2>📚 Our Syllabus (Nursery to Class 4)</h2>
-  <div class="syllabus-grid">
-    <div class="syllabus-card">
-      <h3>click on view syllabus</h3>
-      <a href="syllabus.html" class="view-btn">View Syllabus</a>
-    </div>
-  </div>
-</section>
-  <!-- Gallery -->
-  <section id="gallery">
-    <h2>Photo Gallery</h2>
-    <div class="gallery-grid">
-      <img src="g1.jpg" alt="">
-      <img src="g2.jpg" alt="">
-      <img src="g3.jpg" alt="">
+  <section id="facilities" class="facilities">
+    <h2>Our Facilities</h2>
+    <div class="facility-grid">
+      <a href="facilities/library.html" class="card">
+        <img src="images/library.jpg" alt="Library" />
+        <h3>Library</h3>
+      </a>
+      <a href="facilities/smart-class.html" class="card">
+        <img src="images/smartclass.jpg" alt="Smart Class" />
+        <h3>Smart Class</h3>
+      </a>
+      <a href="facilities/playground.html" class="card">
+        <img src="images/playground.jpg" alt="Playground" />
+        <h3>Playground</h3>
+      </a>
+      <a href="facilities/events.html" class="card">
+        <img src="images/events.jpg" alt="Science Lab" />
+        <h3>Events</h3>
+      </a>
     </div>
   </section>
 
-  <!-- Contact -->
-  <section id="contact">
-    <h2>Contact Us</h2>
-    <p>📞 +91-6202518234<br>📧 r.k.publicschoolparasia@gmail.com<br>📍 At- V.T. Center, Near UCO Bank Road, Parasea (713384) West Bengal</p>
-    <a href="https://wa.me/916202518234" target="_blank" class="whatsapp-button">💬 Message us on WhatsApp</a>
-  </section>
+  <!-- Footer Contact -->
+  <footer id="contact" class="footer">
+    <h3>Contact Us</h3>
+    <p>📍 R.K. Public School, Parasea(713384), Paschim Barddhman, West Bengal</p>
+    <p>📞 +91 6202518234</p>
+    <p>✉️ rkpschool@gmail.com</p>
 
-  <!-- Floating WhatsApp -->
-  <a href="https://wa.me/916202518234" target="_blank" class="floating-whatsapp" title="Chat on WhatsApp">
-    <img src="whatsapp-icon.png" alt="WhatsApp">
-  </a>
-   <div class="map-container">
-    <iframe 
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3670.093833149899!2d87.15567087506425!3d23.646249878762917!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f715e7d71b6eb5%3A0x1e28d31801b5d657!2sR.K.%20PUBLIC%20SCHOOL.!5e0!3m2!1sen!2sin!4v1719226023092!5m2!1sen!2sin" 
-      width="100%" 
-      height="300" 
-      style="border:0;" 
-      allowfullscreen="" 
-      loading="lazy" 
-      referrerpolicy="no-referrer-when-downgrade">
-    </iframe>
-  </div>
-</section>
-<script>
-  const hamburger = document.getElementById("hamburger");
-  const navbar = document.getElementById("navbar");
+    <!-- Map (size adjusted to 200px height) -->
+    <div class="map-container">
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3670.093833149899!2d87.15567087506425!3d23.646249878762917!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f715e7d71b6eb5%3A0x1e28d31801b5d657!2sR.K.%20PUBLIC%20SCHOOL.!5e0!3m2!1sen!2sin!4v1719226023092!5m2!1sen!2sin" 
+        width="100%" 
+        height="200" 
+        style="border:0;" 
+        allowfullscreen="" 
+        loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
 
-  hamburger.addEventListener("click", () => {
-    navbar.classList.toggle("active");
-  });
-</script>
-<!-- Footer -->
-  <footer>
-    <p>© 2025 R.K. Public School</p>
+    <!-- Social Icons -->
+    <div class="social-icons">
+      <a href="https://facebook.com/yourpage" target="_blank">
+        <img src="images/facebook.svg" alt="Facebook" />
+      </a>
+      <a href="https://instagram.com/yourpage" target="_blank">
+        <img src="images/instagram.svg" alt="Instagram" />
+      </a>
+      <a href="https://youtube.com/@ITsOnlyPOV" target="_blank">
+        <img src="images/youtube.svg" alt="YouTube" />
+      </a>
+    </div>
+
+    <p>&copy; 2025 R.K. Public School</p>
   </footer>
+
+  <!-- WhatsApp Icon -->
+  <a href="https://wa.me/+916202518234" class="whatsapp-float" target="_blank">
+    <img src="images/whatsapp-icon.png" alt="WhatsApp" />
+  </a>
+
+  <!-- Scroll to Top -->
+  <a href="#" class="scroll-top">⬆</a>
+
+  <script src="script.js"></script>
 </body>
 </html>
